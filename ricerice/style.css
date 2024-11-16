@@ -1,0 +1,119 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+select, input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.menu-card {
+    display: none;
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: scale(0.9);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-card.show {
+    display: block;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.menu-image {
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.menu-info p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.menu-info p#menuName {
+    font-weight: bold;
+    color: #333;
+}
+
+.menu-info p#menuPrice, #menuCalories {
+    color: #888;
+    font-size: 1rem;
+}
+
+.recent-recommendations {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.recent-recommendations ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recent-recommendations li {
+    margin-bottom: 10px;
+    font-weight: bold;
+}

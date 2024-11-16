@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>점심 메뉴 추천기</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>점심 메뉴 추천기</h1>
+
+        <div class="filters">
+            <div>
+                <label for="category">카테고리 선택</label>
+                <select id="category">
+                    <option value="all">모두</option>
+                    <option value="spicy">매운 음식</option>
+                    <option value="rice">밥 요리</option>
+                    <option value="noodles">면 요리</option>
+                    <option value="light">가벼운 음식</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="budget">예산 설정 (만원)</label>
+                <input type="number" id="budget" min="0" placeholder="예: 5">
+            </div>
+
+            <div>
+                <label for="diet">식사 조건</label>
+                <select id="diet">
+                    <option value="all">모두</option>
+                    <option value="vegetarian">채식</option>
+                    <option value="meat">고기</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="spiceLevel">매운 정도</label>
+                <select id="spiceLevel">
+                    <option value="all">모두</option>
+                    <option value="mild">순한</option>
+                    <option value="medium">보통</option>
+                    <option value="spicy">매운</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="calories">칼로리 제한 (kcal)</label>
+                <input type="number" id="calories" placeholder="예: 600">
+            </div>
+        </div>
+
+        <button id="recommendButton" class="btn">추천받기</button>
+
+        <div id="menu-card" class="menu-card">
+            <div id="menuImage" class="menu-image"></div>
+            <div class="menu-info">
+                <p id="menuName"></p>
+                <p id="menuPrice"></p>
+                <p id="menuCalories"></p>
+            </div>
+        </div>
+
+        <div id="recentRecommendations" class="recent-recommendations">
+            <h2>최근 추천된 메뉴</h2>
+            <ul id="recentList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
